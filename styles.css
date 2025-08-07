@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .main-div {
-    background: url(/IMGS/bg.jpg);
+    background: url(IMGS/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
