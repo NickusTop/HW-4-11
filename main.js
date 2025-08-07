@@ -23,7 +23,7 @@ const timer = setInterval(() => {
       minutes--;
     }
   }
-}, 1000);
+}, 60000);
 
 function startTimer() {
     setInterval(() => {
