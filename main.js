@@ -39,7 +39,7 @@ function startTimer() {
         seconds -= 1;
         const time = getTimeFromSeconds(seconds);
          h1Timer.textContent = `${time.minutes}:${time.secs}`
-    }, 100);
+    }, 1000);
 }
 
 startTimer()
