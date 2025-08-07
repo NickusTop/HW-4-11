@@ -54,7 +54,7 @@ function startAnimation() {
 }
 
 function action() {
-   mainDiv.style.background = "url(/IMGS/bg2.jpg)"
+   mainDiv.style.background = "url(IMGS/bg2.jpg)"
 }
 
 function getTimeFromSeconds(startSeconds) {
