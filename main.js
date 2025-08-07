@@ -1,4 +1,6 @@
 const h1Timer = document.querySelector('.h1-timer')
+const h1Animation = document.querySelector('.h1-animation')
+const mainDiv = document.querySelector('.main-div')
 
 let hours = 1;
 let minutes = 0;
@@ -26,18 +28,33 @@ const timer = setInterval(() => {
 function startTimer() {
     setInterval(() => {
         if (seconds === 10) {
-
+           startAnimation();
+        }
+        if (seconds === 0) {
+            clearInterval(this);
+            h1Timer.textContent = "00:00";
+            action();
+            return;
         }
         seconds -= 1;
         const time = getTimeFromSeconds(seconds);
          h1Timer.textContent = `${time.minutes}:${time.secs}`
-    }, 1000);
+    }, 100);
 }
 
 startTimer()
 
 function startAnimation() {
-    
+  let rotate = 0;
+      setInterval(() => {
+        rotate += 10;
+        h1Animation.style.transform = `rotate(${rotate}deg)`;
+        h1Animation.style.display = 'flex';
+    }, 100);  
+}
+
+function action() {
+   mainDiv.style.background = "url(/IMGS/bg2.jpg)"
 }
 
 function getTimeFromSeconds(startSeconds) {

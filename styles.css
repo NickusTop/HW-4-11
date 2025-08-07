@@ -4,5 +4,33 @@
     box-sizing: border-box;
 }
 .main-div {
-    background: ;
+    background: url(/IMGS/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+.overflow-div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.722);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h1-timer {
+    color: white;
+    text-align: center;
+    font-size: 46px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h1-animation {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.5s ease-in-out;
+    margin-top: 30px;
+    display: none;
 }
